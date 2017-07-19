@@ -1,0 +1,31 @@
+@bg-color__search-field: #007452;
+@color-text-light: #e2e2e2;
+@color-menu-border: #e2e2e2;
+
+.wrapper {
+    background: url("./../images/bg-960.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    .flex-column;
+    justify-content: space-between;
+
+    .content {
+        flex-grow: 1;
+        position: relative;
+        .flex-row;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 99;
+    }
+}
+

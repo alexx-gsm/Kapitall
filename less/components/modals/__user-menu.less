@@ -1,0 +1,296 @@
+.profile-dropdown {
+    height: 100%;
+    width: 310px;
+    position: absolute;
+    right: 0;
+    background: #fdfdfd;
+    z-index: 100;
+    .flex-column;
+
+    .profile-menu__user {
+        height: 135px;
+        width: 100%;
+        border-bottom: 1px solid @color-menu-border;
+        flex-grow: 0;
+        .flex-row;
+        align-items: flex-start;
+        padding-top: 25px;
+        padding-bottom: 30px;
+
+        .profile-menu__user-ava {
+            width: 80px;
+            height: 80px;
+            margin-left: 30px;
+            margin-right: 12px;
+        }
+        .profile-menu__user-info {
+            .flex-column;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100%;
+            .coin-counter {
+                display: none;
+            }
+        }
+        .profile-menu__user-name {
+            position: relative;
+            font-size: 18px;
+            font-weight: bold;
+            color: #6e6e6e;
+        }
+        .profile-menu__user-icon {
+            position: absolute;
+            width: 15px;
+            height: 12px;
+            top: 0;
+            right: -18px;
+            margin: 0;
+        }
+        .profile-menu__user-scores {
+            .flex-row;
+            align-items: center;
+
+            .user-score-group {
+                font-size: 15px;
+                padding-left: 15px;
+                font-weight: bold;
+            }
+            .user-score-current { color: #6e6e6e; }
+            .user-score-separator { color: #bbb;}
+            .user-score-max { color: #bbb; padding-left: 2px;}
+        }
+        .profile-menu__user-stars {
+            position: relative;
+            font-size: 10px;
+            color: white;
+            font-weight: bold;
+
+            img {
+                position: absolute;
+                width: 22px;
+                height: 21px;
+                z-index: -1;
+                top: -5px;
+                left: -8px;
+            }
+        }
+    }
+    .profile-menu__icons {
+        height: 95px;
+        width: 100%;
+        border-bottom: 1px solid @color-menu-border;
+        flex-grow: 0;
+        .flex-row;
+        align-items: center;
+        padding: 10px;
+
+        .profile-menu__icon {
+            margin: 10px;
+            .flex-row;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 45px;
+                height: 45px;
+            }
+            span {
+                position: absolute;
+                font-size: 15px;
+                font-weight: bold;
+                color: #65c7c6;
+            }
+        }
+    }
+    .profile-menu__links {
+        height: 95px;
+        width: 100%;
+        border-bottom: 1px solid @color-menu-border;
+        flex-grow: 1;
+        .flex-column;
+        padding: 15px;
+
+        .link-item {
+            padding: 10px;
+            .flex-row;
+            position: relative;
+
+            img { position: absolute; }
+            a {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 15px;
+                color: #6e6e6e;
+                margin-left: 35px;
+            }
+        }
+    }
+    .profile-menu__logout {
+        height: 53px;
+        width: 100%;
+        flex-grow: 0;
+        padding-left: 30px;
+        .flex-row;
+
+        button {
+            .button-clear;
+            font-size: 15px;
+            color: #6e6e6e;
+        }
+    }
+}
+
+@media (min-width: @screen-md-max) and (max-width: @screen-lg-min) {
+    .profile-dropdown {
+        height: 100%;
+        width: 310px;
+        position: absolute;
+        right: 0;
+        background: #fdfdfd;
+        z-index: 100;
+        .flex-column;
+
+        .profile-menu__user {
+            height: 135px;
+            width: 100%;
+            border-bottom: 1px solid @color-menu-border;
+            flex-grow: 0;
+            .flex-row;
+            align-items: flex-start;
+            padding-top: 25px;
+            padding-bottom: 30px;
+
+            .profile-menu__user-ava {
+                width: 80px;
+                height: 80px;
+                margin-left: 30px;
+                margin-right: 12px;
+            }
+            .profile-menu__user-info {
+                .flex-column;
+                justify-content: space-between;
+                align-items: flex-start;
+                height: 100%;
+            }
+            .profile-menu__user-name {
+                position: relative;
+                font-size: 18px;
+                font-weight: bold;
+                color: #6e6e6e;
+            }
+            .profile-menu__user-icon {
+                position: absolute;
+                width: 15px;
+                height: 12px;
+                top: 0;
+                right: -18px;
+                margin: 0;
+            }
+            .profile-menu__user-scores {
+                .flex-row;
+                align-items: center;
+
+                .user-score-group {
+                    font-size: 15px;
+                    padding-left: 15px;
+                    font-weight: bold;
+                }
+                .user-score-current { color: #6e6e6e; }
+                .user-score-separator { color: #bbb;}
+                .user-score-max { color: #bbb; padding-left: 2px;}
+            }
+            .profile-menu__user-stars {
+                position: relative;
+                font-size: 10px;
+                color: white;
+                font-weight: bold;
+
+                img {
+                    position: absolute;
+                    width: 22px;
+                    height: 21px;
+                    z-index: -1;
+                    top: -5px;
+                    left: -8px;
+                }
+            }
+        }
+        .profile-menu__icons {
+            height: 95px;
+            width: 100%;
+            border-bottom: 1px solid @color-menu-border;
+            flex-grow: 0;
+            .flex-row;
+            align-items: center;
+            padding: 10px;
+
+            .profile-menu__icon {
+                margin: 10px;
+                .flex-row;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 45px;
+                    height: 45px;
+                }
+                span {
+                    position: absolute;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #65c7c6;
+                }
+            }
+        }
+        .profile-menu__links {
+            height: 95px;
+            width: 100%;
+            border-bottom: 1px solid @color-menu-border;
+            flex-grow: 1;
+            .flex-column;
+            padding: 15px;
+
+            .link-item {
+                padding: 10px;
+                .flex-row;
+                position: relative;
+
+                img { position: absolute; }
+                a {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 15px;
+                    color: #6e6e6e;
+                    margin-left: 35px;
+                }
+            }
+        }
+        .profile-menu__logout {
+            height: 53px;
+            width: 100%;
+            flex-grow: 0;
+            padding-left: 30px;
+            .flex-row;
+
+            button {
+                .button-clear;
+                font-size: 15px;
+                color: #6e6e6e;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-md-min) {
+    .profile-dropdown {
+        .profile-menu__user {
+            .profile-menu__user-info {
+                .coin-counter {
+                    display: block;
+                    position: relative;
+                    left: -8px;
+                }
+            }
+        }
+    }
+}

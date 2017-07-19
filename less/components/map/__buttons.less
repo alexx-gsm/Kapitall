@@ -1,0 +1,39 @@
+.button-group {
+    position: absolute;
+    left: 0;
+    .flex-column;
+    z-index: 20;
+
+    button { .button-clear; width: 34px; height: 33px; margin: 3px 5px; }
+    .button-group__plus {
+        background: url("./../../images/icon-plus.png") no-repeat center;
+        background-size: contain;
+    }
+    .button-group__minus {
+        background: url("./../../images/icon-minus.png") no-repeat center;
+        background-size: contain;
+    }
+}
+
+@media (min-width: @screen-md-max) and (max-width: @screen-lg-min) {
+    .button-group {
+        position: absolute;
+        left: 0;
+        .flex-column;
+        z-index: 20;
+
+        button { .button-clear; width: 34px; height: 33px; margin: 3px 5px; }
+        .button-group__plus {
+            background: url("./../images/icon-plus.png") no-repeat center;
+            background-size: contain;
+        }
+        .button-group__minus {
+            background: url("./../images/icon-minus.png") no-repeat center;
+            background-size: contain;
+        }
+    }
+}
+
+@media (max-width: @screen-md-min) {
+
+}

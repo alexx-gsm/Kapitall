@@ -1,0 +1,85 @@
+.card-group {
+    position: absolute;
+    align-self: flex-end;
+    height: 85px;
+    width: 80%;
+    padding-top: 2px;
+    .flex-row;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    z-index: 20;
+
+    .card-action {
+        width: 140px;
+        height: 70px;
+        border-radius: 5px;
+        background-color: #fcfcfc;
+        margin: 0 10px;
+        .flex-column;
+        justify-content: flex-end;
+        align-items: center;
+        flex-shrink: 0;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+
+        .card-action__desc {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: bold;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            color: #b0b0b0;
+        }
+    }
+}
+
+@media (min-width: @screen-md-max) and (max-width: @screen-lg-min) {
+    .card-group {
+        position: absolute;
+        align-self: flex-end;
+        height: 85px;
+        width: 80%;
+        padding-top: 2px;
+        .flex-row;
+        justify-content: center;
+        align-items: flex-start;
+        overflow-y: auto;
+        z-index: 20;
+
+        .card-action {
+            width: 140px;
+            height: 70px;
+            border-radius: 5px;
+            background-color: #fcfcfc;
+            margin: 0 10px;
+            .flex-column;
+            justify-content: flex-end;
+            align-items: center;
+            flex-shrink: 0;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+
+            .card-action__desc {
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: bold;
+                padding-top: 5px;
+                padding-bottom: 10px;
+                color: #b0b0b0;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-md-min) {
+    .card-group {
+        height: 75px;
+
+        .card-action {
+            width: 100px;
+            height: 50px;
+            justify-content: center;
+
+            .card-action__desc { display: none; }
+        }
+    }
+}

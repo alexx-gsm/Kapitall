@@ -1,0 +1,66 @@
+.bottom-panel {
+    height: @height__bottom-panel__md;
+    width: 100%;
+    background-color: @bg-color__bottom-panel;
+    flex-shrink: 0;
+    .flex-row;
+    justify-content: space-between;
+    font-size: 14px;
+    color: @color-text-light;
+
+    .info-row {
+        flex-grow: 1;
+        .flex-row;
+        overflow-x: auto;
+        padding: 0 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+
+        .info-row__item {
+            .flex-row;
+            align-items: center;
+            margin-right: 15px;
+        }
+        .info-row__item-name { margin-right: 10px; }
+        .glyphicon {
+            font-size: 8px;
+            margin: 0 3px;
+        }
+        .info-row__item.trend-down .glyphicon { color: #fb5353; }
+        .info-row__item.trend-up .glyphicon { color: #81f47b; }
+
+        &:after {
+            content: '';
+            position: fixed;
+            right: 100px;
+            width: 15px;
+            height: 100%;
+            background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(83,83,83,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(83,83,83,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(83,83,83,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#535353',GradientType=1 ); /* IE6-9 */
+        }
+    }
+    .clock {
+        width: 90px;
+        padding-right: 10px;
+        .flex-row;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+    }
+
+
+}
+
+@media (min-width: @screen-md-max) and (max-width: @screen-lg-min) {
+    .bottom-panel {
+        height: @height__bottom-panel__md;
+        width: 100%;
+        background-color: @bg-color__bottom-panel;
+        flex-shrink: 0;
+    }
+}
