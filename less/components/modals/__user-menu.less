@@ -1,7 +1,8 @@
 .profile-dropdown {
-    height: 100%;
     width: 310px;
-    position: absolute;
+    position: fixed;
+    top: @height__top-panel__md;
+    bottom: @height__bottom-panel__md;
     right: 0;
     background: #fdfdfd;
     z-index: 100;
@@ -142,13 +143,6 @@
 
 @media (min-width: @screen-md-max) and (max-width: @screen-lg-min) {
     .profile-dropdown {
-        height: 100%;
-        width: 310px;
-        position: absolute;
-        right: 0;
-        background: #fdfdfd;
-        z-index: 100;
-        .flex-column;
 
         .profile-menu__user {
             height: 135px;
